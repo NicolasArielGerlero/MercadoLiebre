@@ -6,11 +6,15 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a; */
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body{
     font-family: 'Roboto';
     font-size: 12px;
-    margin: 0;
-    padding: 0;
 }
 
 .titulares-section{
@@ -26,11 +30,50 @@ body{
     margin: 5%;
 }
 
+.barra-busqueda{
+    border: solid grey 0.5px;
+    border-radius: 4.5%;
+}
+
 .imagenes-productos{
     width:50%;
 
 }
 
+.contenedor-magnifying-glass .fa-solid{
+    background-color: #efefef;
+    padding-top: 0.5%;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    padding-bottom: 0.5%;
+    border: solid grey 0.5px;
+    border-radius: 10%;
+    
+
+}
 .precio{
     font-size:18px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+.descripciones{
+   font-size:16px;
+}
+
+
+.contenedor-bars{
+    text-align: center;
+}
+
+.contenedor-bars .fa-solid{  
+   background-color:#0044aa;
+   align-self: center;
+   padding: 3%;
+   border-radius: 10%;
+   font-size: 1rem;
+
+
 }

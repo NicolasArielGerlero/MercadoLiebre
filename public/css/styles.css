@@ -10,11 +10,21 @@ Verde: #39b54a; */
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Roboto';
     font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.titulo-cuotas{
+    text-align: center;
 }
 
 .titulares-section{
@@ -23,6 +33,11 @@ body{
 
 #Encabezado{
     background-color: #EAC926;
+    padding-bottom: 8%;
+}
+
+.linea{
+    display: inline;
 }
 
 .logo{
@@ -30,10 +45,16 @@ body{
     margin: 5%;
 }
 
+.elementos-busqueda{
+    margin-left: 5%;
+}
+
 .barra-busqueda{
     border: solid grey 0.5px;
     border-radius: 4.5%;
 }
+
+
 
 .imagenes-productos{
     width:50%;
@@ -63,17 +84,21 @@ body{
    font-size:16px;
 }
 
-
 .contenedor-bars{
     text-align: center;
+    font-size: 1.1rem; 
+    background-color: #0044aa;
+    width: 9%;
+    color: white;
+    border-radius: 8%; 
+    padding-top:1.5%;
+    padding-bottom:1.5%;
+    margin: auto;
+    margin-top: 8%;
 }
 
-.contenedor-bars .fa-solid{  
-   background-color:#0044aa;
-   align-self: center;
-   padding: 3%;
-   border-radius: 10%;
-   font-size: 1rem;
+ .menu-navegador, .menu-izquierda{
+    margin-top: 3%;
+    
+} 
 
-
-}

@@ -11,10 +11,11 @@ Verde: #39b54a; */
     padding: 0;
     border: 0;
     box-sizing: border-box;
+     font-family: 'Roboto'; 
 }
 
 body{
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-size: 12px;
 }
 
@@ -57,12 +58,12 @@ a{
 
 
 .imagenes-productos{
-    width:50%;
+    width:100%;
 
 }
 
 .contenedor-magnifying-glass .fa-solid{
-    background-color: #efefef;
+    background-color: #ebebeb;
     padding-top: 0.5%;
     padding-left: 0.3%;
     padding-right: 0.3%;
@@ -87,7 +88,7 @@ a{
 .contenedor-bars{
     text-align: center;
     font-size: 1.1rem; 
-    background-color: #0044aa;
+    background-color: #1259c3;
     width: 9%;
     color: white;
     border-radius: 8%; 
@@ -102,3 +103,61 @@ a{
     
 } 
 
+main{
+   background-color: #ebebeb;
+}
+
+main section{
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+} 
+
+footer{
+    background-color: white;
+    
+}
+
+footer p{
+    font-size: 12px;
+}
+
+.section-targeta, .section-regalo, .section-seguridad{
+    text-align: center;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield{
+    color: #1259c3;
+}
+
+
+.descripcion-footer{
+    max-width:75%;
+    margin: auto;
+}
+
+.iconos-footer{
+    margin-top: 11%;
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+
+.Copyright{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.Banner{
+    display: flex;
+
+}
+
+.img-banner{
+    width: 100%;
+}
+
+main section article{
+    margin: 10px;
+    /* margin: 10px; hace mas chico el articulo */
+}

@@ -15,7 +15,6 @@ Verde: #39b54a; */
 }
 
 body{
-    /* font-family: 'Roboto'; */
     font-size: 12px;
 }
 
@@ -29,12 +28,6 @@ a{
     text-align: center;
 }
 
-.titulares-section{
-    font-size:24px;
-    color: #666;
-    text-align: left;
-    margin-left: 2.5%;
-}
 
 #Encabezado{
     background-color: #EAC926;
@@ -73,34 +66,12 @@ a{
     padding-bottom: 0.5%;
 }
 
-/* .contenedor-magnifying-glass .fa-solid{
-    background-color: #ebebeb;
-     padding-top: 0.8%;
-    padding-left: 0.3%;
-    padding-right: 0.3%;
-    padding-bottom: 0.8%; 
-     border: solid grey 0.5px;
-    border-radius: 12%; 
-    
-
-} */
-
-
 .imagenes-productos{
     width:100%;
     display: block;
 
 }
 
-
-.precio{
-    font-size:18px;
-}
-
-.descuentos{
-    font-size: 16px;
-    color: #39b54a;
-}
 
 .descripciones{
    font-size:16px;
@@ -126,7 +97,7 @@ a{
 
 main{
     background-color: #ebebeb; 
-   padding-bottom: 1%;
+    padding-bottom: 1%;
 }
 
  main section{
@@ -181,34 +152,72 @@ footer p{
 
 main section article{
     margin: 10px;
-    /* margin: 10px; hace mas chico el articulo */
 }
 
 .descripcion-producto{
     border-top: 1px solid #ebebeb;;
     background-color: white;
     padding: 15px;
+    position: relative;
 }
 
-.fa-truck{
-    color: #39b54a;
-    font-size: 1rem;
+.div-logo-camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
-    padding: 2.5%;
-    border: 1px #39b54a solid;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+} 
+
+.fa-truck{
+     color: #39b54a; 
 }
+
 
 .descripciones{
     margin-top: 5%;
     color: #666;
     display: none;
-    /* padding-top: 5%; */
-    /* display: none; */
-    /* font-weight: bold; */
-    /* font-weight:600  */
-    /*  */
-    /* Gris claro: #ebebeb; */
 }
+
+.precio-descuento{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;    
+}
+
+.precio{
+    font-size:18px;
+    width: 30%;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+
+main section header{
+    display: block;
+    width: 100%;
+    padding-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin: center;
+    text-align: left;
+    margin-left: 2.5%;
+ }
+
+.titulares-section{
+    font-size:24px;
+    color: #666;
+}
+
 
 
 /* Navegacion en tablets */
@@ -222,6 +231,19 @@ main section article{
     .contenedor-bars{
         display: none;
     }
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section article{
+        width: 44%;
+        /* margin-top: 10%; */
+    }
+    
+
     .menu-navegador{
         display: block;
         /* flex-wrap: nowrap;  */
@@ -248,5 +270,9 @@ main section article{
 
 /* Navegacion en desktops */
 @media(min-width:769px){
+    main section article{
+        width: 22%;
+        /* margin-top: 10%; */
+    }
 
 }

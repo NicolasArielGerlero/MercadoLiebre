@@ -23,47 +23,15 @@ a{
     color: black;
 }
 
-.titulo-cuotas{
-    margin-top: 2.5%;
-    text-align: center;
-}
 
 
-#Encabezado{
+.encabezado{
     background-color: #EAC926;
     padding-bottom: 6%;
 }
 
 .linea{
     display: inline;
-}
-
-.logo{
-    width:50%;
-    margin: 5%;
-}
-
-.barra-busqueda{
-    border: solid grey 0.5px;
-}
-
-
-.elementos-busqueda{
-    display: flex;
-    margin-left: 5%;
-}
-
- 
-.contenedor-magnifying-glass{
-    text-align: center;
-    Background-color: #ebebeb;
-    border: solid grey 0.5px;
-    align-self: center;
-    border-radius: 9%;
-    margin-left: 1.2%;
-    width: 18px;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
 }
 
 .imagenes-productos{
@@ -87,7 +55,7 @@ a{
     padding-top:2%;
     padding-bottom:2%;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 7%;
 }
 
 .menu-navegador{
@@ -212,16 +180,64 @@ main section header{
     text-align: left;
     margin-left: 2.5%;
  }
-
+ 
 .titulares-section{
     font-size:24px;
     color: #666;
 }
 
-/* .main-header-top-bar{
-    display: flex;
-} */
 
+.main-header-top-bar{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.contenedor-logo{
+    width: 45%;
+}
+
+.elementos-busqueda{
+    display: flex;
+    width: 50%;
+    margin-left: 5%;
+    position: relative;
+}
+
+.titulo-cuotas{
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-cuotas p{
+    width: 100%;
+}
+
+.barra-busqueda{
+    border: solid #ffffff 0.5px;
+    width: 100%;
+    border-radius: 5.5%;
+    padding: 5%;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+
+.contenedor-magnifying-glass{
+    display: block;
+    text-align: center;
+    Background-color: #ffffff;
+    align-self: center;
+    width: 18px;
+    position: relative;
+    right: 22px;
+    padding-left: 1%;
+    color: #666;
+}
 
 /* Navegacion en tablets */
  @media(min-width:361px){
@@ -261,34 +277,115 @@ main section header{
          width: 100%; 
     }
 
-    .menu-navegador{
-        display: block;
-
-    } 
-
-    .menu-navegador{
-        margin-top: 5%;
+    .contenedor-logo{
+        width: 30%;
+    }
+    
+    .elementos-busqueda{
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        
+        width: 30%;
+        margin-left: 5%;
+        position: relative;
     }
 
-    .menu-izquierda{
-        list-style-type: none;
+    .titulo-cuotas{
+        padding-top: 0%;
+        width: 35%;
+        text-align: center;
+    }
+
+    .main-header-top-bar{
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+
+    .menu-navegador{
+        display: block;
+    }
+    
+
+    .menu-navegador{
+        display: flex;
+        flex-direction: row;
     }
 
     .menu-derecha{
+        width: 50%;
+        display: flex;
         list-style-type: none;
-    } 
+        justify-content: flex-start;
+        margin-top: 3%;
+        margin-left: 4%;
+    }
 
+    .menu-derecha li{
+        margin-left: 3%;
+    }
+
+    .menu-izquierda{
+        width: 50%;
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        margin-top: 3%;
+        margin-right: 4%;
+    }
+
+    .menu-izquierda li{
+        margin-right: 3%;
+    }
+    
+    .encabezado{
+        padding-bottom: 2%;
+    }
+
+    .contenedor-magnifying-glass{
+        text-align:center;
+        /* font-size: bolder; */
+        Background-color: #ebebeb;
+        border: solid grey 0.5px;
+        align-self: center;
+        border-radius: 10%;
+        margin-left: 1.2%;
+        width: 15%;
+        /* padding-top: 0.9%;
+        padding-bottom: 0.9%; */
+        position: static;
+        /* padding-right: 5%; */
+        color: black;
+        padding: 3%;
+        /* margin: center; */
+    }
+
+    .barra-busqueda{
+        border: solid grey 0.5px;
+        padding: 0%;
+        width: 80%;
+        font-size: 16px;
+        
+    }
 }
 
 /* Navegacion en desktops */
 @media(min-width:769px){
     main section article{
         width: 22%;
-        /* margin-top: 10%; */
     }
+
+    *{
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+
+    .fa-credit-card, .fa-gift, .fa-user-shield{
+        font-size: xx-large;
+    } 
 
 }

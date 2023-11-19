@@ -218,6 +218,9 @@ main section header{
     color: #666;
 }
 
+/* .main-header-top-bar{
+    display: flex;
+} */
 
 
 /* Navegacion en tablets */
@@ -240,31 +243,44 @@ main section header{
 
     main section article{
         width: 44%;
-        /* margin-top: 10%; */
     }
     
+    .precio-descuento{
+        display: block;
+        flex-wrap: nowrap;
+        align-items: center;    
+    }
+
+    .precio{
+        display: inline;
+         width: 30%; 
+    }
+
+    .descuentos{
+        display: inline;
+         width: 100%; 
+    }
 
     .menu-navegador{
         display: block;
-        /* flex-wrap: nowrap;  */
-        /* flex-direction: row; */
+
     } 
 
     .menu-navegador{
         margin-top: 5%;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
-        list-style-type: none;
+        justify-content: space-between;
+        
     }
-/* 
+
     .menu-izquierda{
-        width: 50%;
+        list-style-type: none;
     }
 
     .menu-derecha{
-        width: 50%;
-    } */
+        list-style-type: none;
+    } 
 
 }
 

@@ -239,6 +239,52 @@ main section header{
     color: #666;
 }
 
+
+/*Relacionado al register*/
+.input-textos input{
+    background-color: white;
+    color: #666;
+    border-radius: 5px 5px 5px 5px;
+    width: 93%;
+    margin: auto;
+    display: block;
+    margin-bottom: 3%;
+    padding: 1.5%;
+    font-size: 12px;
+    margin-top: 3%;
+}
+ 
+.titulo-register{
+    margin-left: 2.5%;
+    padding-top:2.5%;
+} 
+
+.register-check-texto{
+    margin-left: 4%;
+    margin-top: 2.5%;
+}
+
+.register-carga-de-archivo{
+    margin-left: 4%;
+    margin-top: 2.5%;
+}
+
+.contenedor-botones-register{
+    margin-left: 4%;
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+
+}
+
+.contenedor-botones-register button{
+    background-color: #1259c3;
+    border: solid black 1px;
+    color: white;
+    padding: 1.5%;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+}
+
 /* Navegacion en tablets */
  @media(min-width:361px){
     .descripciones{
@@ -369,6 +415,9 @@ main section header{
         
     } */
 }
+
+
+
 
 /* Navegacion en desktops */
 @media(min-width:769px){

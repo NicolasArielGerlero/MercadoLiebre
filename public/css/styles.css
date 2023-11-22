@@ -285,6 +285,27 @@ main section header{
     text-align: center;
 }
 
+
+/*Relacionado al login*/
+.contenedor-botones-login{
+    margin-left: 4%;
+    margin-top: 2.5%;
+    padding-bottom: 5%;
+    width: 93%;
+    text-align: center;
+    margin: auto;
+}
+
+.contenedor-botones-login button{
+    background-color: #1259c3;
+    border: solid black 1px;
+    color: white;
+    padding: 1.5%;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    width: 100%;
+}
+
 /* Navegacion en tablets */
  @media(min-width:361px){
     .descripciones{

@@ -1,3 +1,3 @@
 ## MercadoLiebre
-### Para Ejecutar la pagina utilizar: npm test
+### Para ejecutar el proyecto escribir en la consola: npm test
 

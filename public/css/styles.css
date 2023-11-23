@@ -89,8 +89,12 @@ footer p{
 
 .fa-credit-card, .fa-gift, .fa-user-shield{
     color: #1259c3;
+    transition: color 0.7s;
 }
 
+.fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
+    color:#39b54a;
+}
 
 .descripcion-footer{
     max-width:75%;
@@ -144,7 +148,12 @@ main section article{
 } 
 
 .fa-truck{
-     color: #39b54a; 
+     color: #39b54a;
+     transition: rotate, 1s; 
+}
+
+.fa-truck:hover{
+    transform: rotate(-90deg);
 }
 
 
@@ -286,7 +295,13 @@ main section header{
     padding: 1.5%;
     border-radius: 5px 5px 5px 5px;
     text-align: center;
+    transition: background-color 0.5s;
 }
+
+.contenedor-botones-register button:hover{
+    background-color: #0022AA;
+}
+
 
 
 /*Relacionado al login*/
@@ -299,6 +314,8 @@ main section header{
     margin: auto;
 }
 
+
+
 .contenedor-botones-login button{
     background-color: #1259c3;
     border: solid black 1px;
@@ -307,16 +324,35 @@ main section header{
     border-radius: 5px 5px 5px 5px;
     text-align: center;
     width: 100%;
+    transition: background-color 0.5s;
 }
+
+.contenedor-botones-login button:hover{
+    background-color: #0022AA;
+}
+
+
 
 /* Navegacion en tablets */
  @media(min-width:361px){
     .descripciones{
-        display:inline-block
+        display:inline-block;
+        opacity: 0;
+        transition: opacity, 0.1s;
     }
+    .descripciones:hover{
+        opacity: 1;
+    }
+
     main section article{
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+        transition: box-shadow, 0.5s;
+    }
+
+    main section article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
     .contenedor-bars{
         display: none;
     }
@@ -422,31 +458,6 @@ main section header{
         padding-bottom: 2%;
     }
 
-    /* .contenedor-magnifying-glass{
-        right: 15%;
-    } */
-
-    /* .contenedor-magnifying-glass{
-        text-align:center;
-        Background-color: #ebebeb;
-        border: solid grey 0.5px;
-        align-self: center;
-        border-radius: 10%;
-        margin-left: 1.2%;
-        width: 15%;
-        position: static;
-        color: black;
-        padding: 3%;
-
-    }
-
-    .barra-busqueda{
-        border: solid grey 0.5px;
-        padding: 0%;
-        width: 80%;
-        font-size: 16px;
-        
-    } */
 }
 
 
@@ -484,4 +495,63 @@ main section header{
         margin-right: 3%;
 
     }
+
+    .titulo-register{
+        margin-left: 25%;
+        padding-top: 1.2%;
+    }
+
+    .input-textos input{
+         padding: 0.8%; 
+         margin-bottom: 0.5%;
+         margin-top: 0.5%;
+         width: 50%;
+    }
+
+    .register-check-texto input{
+        margin-left: 25%;
+    }
+
+    .register-check-texto {
+         margin-left: 1%;
+         margin-top: 1%;
+    }
+
+    .checkbox-register{
+        margin-left: 25%;
+    }
+
+    .register-carga-de-archivo{
+        margin-left: 25%;
+        margin-top: 1%;
+    }
+
+    .contenedor-botones-register{
+        display: flex;
+        margin-left: 25%;
+        margin-top: 1%;
+    }
+
+    .contenedor-botones-register button{
+        width: 12%;
+        text-align: center;
+        padding: 0.7%;
+        margin-left: 0.5%;
+        max-width: 80px;
+    }
+
+    .contenedor-botones-login{
+        width: 7.5%;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .contenedor-sections-footer{
+        display: flex;
+
+    }
+    
+
+
 }

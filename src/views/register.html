@@ -19,7 +19,7 @@
         </div>
         
         <div class="elementos-busqueda">
-            <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
+            <input class="barra-busqueda" type="text" name="busqueda" id="busqueda" placeholder="Buscar productos, marcas">
             <div class="contenedor-magnifying-glass fa-lg">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -54,25 +54,25 @@
 
         <form action="/" action="GET">
             <div class="input-textos">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" required minlength="2">
             </div>
            <div class="input-textos"> 
-                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario">
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" required minlength="2">
             </div>
            <div class="input-textos"> 
-                <input type="email" name="email" id="email" placeholder="E-mail"></div>
+                <input type="email" name="email" id="email" placeholder="E-mail" required></div>
            <div> 
                 <h3 class="titulo-register">Fecha de nacimiento</h3>
             </div>
            <div class="input-textos" > 
-                <input type="date" name="fecha" id="fecha" max="2023-11-21"></div>
+                <input type="date" name="fecha" id="fecha" max="2023-11-21" required></div>
            <div class="input-textos"> 
-                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio"></div>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required></div>
            <div>
                  <h3 class="titulo-register">Perfil del usuario</h3>
             </div>
             <label>
-                <input class="register-check-texto" type="radio" name="perfil-usuario" value="comprador"> Comprador
+                <input class="register-check-texto" type="radio" name="perfil-usuario" value="comprador" checked> Comprador
             </label>
             <label>
                 <input class="register-check-texto" type="radio" name="perfil-usuario" value="vendedor"> Vendedor
@@ -101,13 +101,13 @@
             </div>
             <h3 class="titulo-register">Seleccionar foto de perfil</h3>
             <div class="register-carga-de-archivo">
-                <input type="file" name="foto-perfil" accept=".jpg" placeholder="Seleccionar foto de perfil"">
+                <input type="file" name="foto-perfil" accept=".jpg" placeholder="Seleccionar foto de perfil">
             </div>
             <div class="input-textos" >
-                <input type="password" name="password" id="password" placeholder="Contraseña">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
             </div>
             <div class="input-textos" > 
-                <input type="password" name="password" id="password" placeholder="Confirmar contraseña">
+                <input type="password" name="password" id="password" placeholder="Confirmar contraseña" required>
             </div>
             <div class="contenedor-botones-register">
                 <button  type="reset">Cancelar</button>

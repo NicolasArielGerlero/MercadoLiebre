@@ -19,7 +19,7 @@
         </div>
         
         <div class="elementos-busqueda">
-            <input class="barra-busqueda" type="text" placeholder="Buscar productos, marcas">
+            <input class="barra-busqueda" type="text" name="busqueda" id="busqueda" placeholder="Buscar productos, marcas">
             <div class="contenedor-magnifying-glass fa-lg">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -54,10 +54,10 @@
 
         <form action="/" action="GET">
             <div class="input-textos">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido"  required minlength="2">
             </div>
             <div class="input-textos" >
-                <input type="password" name="password" id="password" placeholder="Contraseña">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
             </div>
             <div class="contenedor-botones-login">
                 <button  type="submit">Enviar</button>
